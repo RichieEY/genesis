@@ -1,9 +1,7 @@
 ---
 layout: default
 ---
-    <h1>Welcome To Innovation Meet-Up Session #4</h1>
-    <h2>Blockchain Workshop<h2>
-    <h3>This Is The Genesis Code For Your Private Blockchain.</h3>
+    <h1>It Starts With The Genesis</h1>
     <pre>{
         "config": {
             "chainId": 73,
@@ -19,4 +17,19 @@ layout: default
         }
     }
     </pre>
+    <h3>This Is The Solidity Code For Your First Smart Contract</h3>
+    <pre>
+        pragma solidity ^0.4.0;
 
+        contract SimpleStorage {
+            uint storedData;
+        
+            function set(uint x) public {
+                storedData = x;
+            }
+        
+            function get() public constant returns (uint) {
+                return storedData;
+            }
+        }
+        </pre>
